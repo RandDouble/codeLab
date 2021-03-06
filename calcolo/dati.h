@@ -6,7 +6,7 @@ using namespace std;
 
 struct dati{
     float time;
-    double amp;
+    double x, v, a;
 };
 
 //caricamento di un dati da file

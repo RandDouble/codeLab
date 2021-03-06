@@ -139,8 +139,7 @@ int initResize(arrayDati *pa, string fileName){
 
 	dati appo;
 	initPunto(&appo);
-	
-	
+		
 	int count = 0;
 
 	fileIn.open(fileName);

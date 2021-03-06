@@ -4,7 +4,7 @@ using namespace std;
 
 void assoluto(arrayDati*dat){
     for(int i=0; i<dat->used; i++){
-        dat->raw[i].amp=abs(dat->raw[i].amp);
+        dat->raw[i].v=abs(dat->raw[i].v);
     }
 }
 
@@ -42,9 +42,9 @@ void massimo(arrayDati origin, arrayDati*out){
 
 bool isMax(dati* ver, int i){
     //"derivata sinistra" circa in realtà è il rapporto incrementale
-    double derSin=(ver[i].amp-ver[i-1].amp)/(ver[i].time-ver[i-1].time);
+    double derSin=(ver[i].v-ver[i-1].v)/(ver[i].time-ver[i-1].time);
     //"derivata destra" circa in realtà è il rapporto incrementale
-    double derDex=(ver[i+1].amp-ver[i].amp)/(ver[i+1].time-ver[i].time);
+    double derDex=(ver[i+1].v-ver[i].v)/(ver[i+1].time-ver[i].time);
     //cerco le condizioni di massimo
     return (derSin>=0 && derDex<=0)? true : false;
 }

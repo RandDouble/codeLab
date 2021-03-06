@@ -7,6 +7,8 @@
 using namespace std;
 
 int main(){
+
+    std::locale::global( std::locale( "it_IT.UTF-8" ) );
     //****variabili****//
     arrayDati dat;
     arrayDati out;
@@ -15,15 +17,15 @@ int main(){
     int count=0;
     //****parte operativa****//
     cout<<"inserire il nome del file da analizzare senza l'estensione,\
-    \n da notare che deve essere in questa cartella"<<endl;
+    \nda notare che deve essere in questa cartella"<<endl;
     cin>>nameFile;
-    fout.open(nameFile+".csv");
     count=init(&dat, nameFile+".dat");
     if(count==-2){
         cout<<"errore nel caricamento del file"<<endl;
         return -1;
     }
     else cout<<"numero di elementi da analizzare trovati : "<<dat.size<<endl;
+    fout.open(nameFile+".csv");
  //   for(int i=0; i<dat.size; i++){
  //       stampa(&fout, &dat.raw[i], i);    }
     
