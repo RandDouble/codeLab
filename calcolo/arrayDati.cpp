@@ -43,7 +43,7 @@ int init(arrayDati *pa, string fileName){
 	
 	for(int i=0; i<pa->size; i++){
 		leggiFile(&fileIn,&(pa->raw[i]));
-		cout<<pa->raw[1].time<<endl;
+		cout<<pa->raw[i].time<<endl;
 	}
 	pa->used  = count;
 	

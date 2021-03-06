@@ -20,6 +20,7 @@ void massimo(arrayDati origin, arrayDati*out){
     //copio i dati 
     for(int i=0;i<origin.size;i++){
         copia(&appo.raw[i],origin.raw[i]);
+        appo.used=i+1;
     }
     //rendo assoluto la copia fantoccio
     assoluto(&appo);
@@ -30,6 +31,7 @@ void massimo(arrayDati origin, arrayDati*out){
         if(isMax(appo.raw, i)){
             copia(&out->raw[counter],appo.raw[i]);
             counter++;
+            out->used = counter;
             if(isFull(out)) resizeWithBlock(out, 2*(out->size));
         }
     }

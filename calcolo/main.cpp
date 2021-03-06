@@ -24,15 +24,14 @@ int main(){
         return -1;
     }
     else cout<<"numero di elementi da analizzare trovati : "<<dat.size<<endl;
-    for(int i=0; i<dat.size; i++){
-        stampa(&fout, dat.raw, i);
-    }
+ //   for(int i=0; i<dat.size; i++){
+ //       stampa(&fout, &dat.raw[i], i);    }
     
     //vettore con i massimi
     massimo(dat, &out);
     //trasferimento dei dati completi
-    for(int i=0; i<dat.size; i++){
-        stampa(&fout, out.raw, i);
+    for(int i=0; i<out.size; i++){
+        stampa(&fout, &out.raw[i], i);
     }
     fout.close();
     //rimozione spazzatura
