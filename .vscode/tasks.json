@@ -5,6 +5,7 @@
 			"type": "cppbuild",
 			"label": "g++ build active file",
 			"command": "/usr/bin/g++",
+			
 			"args": [
 				"-g",
 				"${workspaceFolder}/calcolo/*.cpp",
