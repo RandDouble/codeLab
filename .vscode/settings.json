@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\Stef\\anaconda3\\envs\\codeLab\\python.exe",
+    "python.pythonPath": "/home/pilo/anaconda3/envs/codeLab/bin/python",
     "cmake.sourceDirectory": "${workspaceFolder}/calcolo",
 
 }

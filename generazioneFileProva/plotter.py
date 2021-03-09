@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pan
 import os
-import time 
+import time
 
 def stampa(punti, grafico, file):
 #funzione che si occupa di stampare il grafico e di salvarlo
@@ -59,11 +59,13 @@ def letturaDati(file):
 controlloCartelle()
 input("caricare i file nella cartella indicata, poi premere enter")
 elFile=os.listdir(path='caricaFile')
-# os.execv()
-time.sleep(3)
+for file in elFile:
+    err=os.system("./main.exe "+file[:-4])
+
+time.sleep(5)
 ##########parte di raccolta dati e stampa#############
 for file in elFile:
     a, b=letturaDati(file[:-4])
-    stampa(a,b,file)
-print("programma terminato, grazie dell'uso,\nRicordati di ringraziare e venerare il mio sommo Creatore")
+    stampa(a,b,file[:-4])
+print("Programma terminato, grazie dell'uso,\nRicordati di ringraziare e venerare il mio sommo Creatore")
 #########termine del programma########################

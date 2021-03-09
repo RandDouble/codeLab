@@ -1,4 +1,4 @@
-#include "dati.h"
+#include "./calcoloLib/dati.h"
 
 using namespace std;
 
@@ -16,11 +16,13 @@ void initPunto(dati*arr){
 }
 
 void stampa(ofstream*off, dati* el, int i){
+    //stampa a video
     cout<<"\ndescrizine dati nr : "<<i+1<<endl;
     cout<<setw(10)<<el->time;
     cout<<setw(10)<<el->x;
     cout<<setw(10)<<el->v;
     cout<<setw(10)<<el->a;
+    //salvataggio nella destinazione finale
     (*off)<<setw(10)<<el->time<<"\t";
     (*off)<<setw(10)<<el->x<<"\t";
     (*off)<<setw(10)<<el->v<<"\t";

@@ -1,4 +1,4 @@
-#include "arrayDati.h"
+#include "./calcoloLib/arrayDati.h"
 
 //Initialize to array of size dim
 int init(arrayDati *pa, int dim){
