@@ -1,5 +1,6 @@
 {
     "python.pythonPath": "/home/pilo/anaconda3/envs/codeLab/bin/python",
     "cmake.sourceDirectory": "${workspaceFolder}/calcolo",
+    "C_Cpp.errorSquiggles": "Disabled",
 
 }

@@ -14,6 +14,7 @@ int main(int argc, char **argv) {
     arrayDati out;
     ofstream fout;
     string nameFile=argv[1];
+    char type=argv[2][0];
     int count=0;
     //****parte operativa****//
     /*  PARTE OBSOLETA, UTILE SE SI VUOLE FAR PARTIRE IL CODICE MANUALMENTE 
@@ -33,7 +34,7 @@ int main(int argc, char **argv) {
         stampa(&fout, &dat.raw[i], i);    }
     */
     //vettore con i massimi
-    massimo(dat, &out);
+    massimo(dat, &out, type);
     //trasferimento dei dati completi
     for(int i=0; i<out.size; i++){
         stampa(&fout, &out.raw[i], i);

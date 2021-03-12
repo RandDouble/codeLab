@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import pandas as pan
 import os
 import time
@@ -9,12 +10,23 @@ def stampa(punti, grafico, file):
     #creazione dei vettori
     at=punti[:,0]
     bt=grafico[:,0]
-    av=punti[:,2]
-    bv=grafico[:,2]
+    if len(file)>=15:
+        av=punti[:,1]
+        bv=grafico[:,1]
+    else:
+        av=punti[:,2]
+        bv=grafico[:,2]
     #inizio grafica
     fig=plt.figure()
+    plt.style.use('ggplot')
     plt.plot( at, av,'bo',label='punti stazionari')
     plt.plot(bt,bv,'y', label='grafico dei dati')
+    #setto il titolo degli assi
+    plt.xlabel('tempo [t]')
+    if len(file)>=15=='H':
+        plt.ylabel('posizione [m]')
+    else:
+        plt.ylabel('velocità [m/s]')
     plt.title('estremi della funzione misurata')
     plt.legend()
     plt.show()
@@ -60,9 +72,12 @@ controlloCartelle()
 input("caricare i file nella cartella indicata, poi premere enter")
 elFile=os.listdir(path='caricaFile')
 for file in elFile:
-    err=os.system("./main.exe "+file[:-4])
+    if len(file)>=15:
+        err=os.system("./main.exe "+file[:-4]+' H')
+    else:
+        err=os.system("./main.exe "+file[:-4]+' s')
 
-time.sleep(5)
+time.sleep(2)
 ##########parte di raccolta dati e stampa#############
 for file in elFile:
     a, b=letturaDati(file[:-4])

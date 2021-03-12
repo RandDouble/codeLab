@@ -4,7 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
+        /*{
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
@@ -16,7 +16,7 @@
 
             ],
             "console": "integratedTerminal"
-        },
+        },*/
         {
             "name": "Python: File corrente",
             "type": "python",
@@ -28,8 +28,8 @@
             "name": "g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/exeCalcolo/${fileBasenameNoExtension}.exe",
-            "args": [],
+            "program": "${workspaceFolder}/main.exe",
+            "args": ["molla1-40g","spd"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
