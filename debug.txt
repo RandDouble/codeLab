@@ -1,0 +1,72 @@
+./main.exe Molla1_40g_1 s
+./main.exe Molla2_20g_1618Hz_regime H
+./main.exe Molla2_20g_1517Hz_regime H
+./main.exe Molla2_20g_1534Hz_regime H
+./main.exe Molla2_40g_1 s
+./main.exe Molla2_20g_1565Hz_regime H
+./main.exe Molla2_20g_1512Hz_regime H
+./main.exe Molla1_80g s
+./main.exe Molla1_80g_1 s
+./main.exe Molla2_20g_1543Hz_regime H
+./main.exe Molla2_20g_1524Hz_regime H
+./main.exe Molla2_20g_1437Hz_regime H
+./main.exe Molla2_20g_1465Hz_regime H
+./main.exe Molla2_20g_1504Hz_regime H
+./main.exe Molla2_20g_conAttuatoreSpento H
+./main.exe Molla2_20g_1425Hz_regime H
+./main.exe Molla1_solosupporto_1 H
+./main.exe Molla1_100g_1 s
+./main.exe Molla1_100g s
+./main.exe Molla2_60g_1 s
+./main.exe Molla2_solosupporto H
+./main.exe Molla2_20g_1 s
+./main.exe Molla2_20g_1550Hz_regime H
+./main.exe Molla1_60g s
+Molla1_40g_1 : velocità
+Molla1_40g_1 inserità label velocità
+Molla2_20g_1618Hz_regime : posizione
+Molla2_20g_1618Hz_regime inserità label posizione
+Molla2_20g_1517Hz_regime : posizione
+Molla2_20g_1517Hz_regime inserità label posizione
+Molla2_20g_1534Hz_regime : posizione
+Molla2_20g_1534Hz_regime inserità label posizione
+Molla2_40g_1 : velocità
+Molla2_40g_1 inserità label velocità
+Molla2_20g_1565Hz_regime : posizione
+Molla2_20g_1565Hz_regime inserità label posizione
+Molla2_20g_1512Hz_regime : posizione
+Molla2_20g_1512Hz_regime inserità label posizione
+Molla1_80g : velocità
+Molla1_80g inserità label velocità
+Molla1_80g_1 : velocità
+Molla1_80g_1 inserità label velocità
+Molla2_20g_1543Hz_regime : posizione
+Molla2_20g_1543Hz_regime inserità label posizione
+Molla2_20g_1524Hz_regime : posizione
+Molla2_20g_1524Hz_regime inserità label posizione
+Molla2_20g_1437Hz_regime : posizione
+Molla2_20g_1437Hz_regime inserità label posizione
+Molla2_20g_1465Hz_regime : posizione
+Molla2_20g_1465Hz_regime inserità label posizione
+Molla2_20g_1504Hz_regime : posizione
+Molla2_20g_1504Hz_regime inserità label posizione
+Molla2_20g_conAttuatoreSpento : posizione
+Molla2_20g_conAttuatoreSpento inserità label posizione
+Molla2_20g_1425Hz_regime : posizione
+Molla2_20g_1425Hz_regime inserità label posizione
+Molla1_solosupporto_1 : posizione
+Molla1_solosupporto_1 inserità label posizione
+Molla1_100g_1 : velocità
+Molla1_100g_1 inserità label velocità
+Molla1_100g : velocità
+Molla1_100g inserità label velocità
+Molla2_60g_1 : velocità
+Molla2_60g_1 inserità label velocità
+Molla2_solosupporto : posizione
+Molla2_solosupporto inserità label posizione
+Molla2_20g_1 : velocità
+Molla2_20g_1 inserità label velocità
+Molla2_20g_1550Hz_regime : posizione
+Molla2_20g_1550Hz_regime inserità label posizione
+Molla1_60g : velocità
+Molla1_60g inserità label velocità

@@ -8,12 +8,15 @@ import time
 def stampa(punti, grafico, file):
 #funzione che si occupa di stampare il grafico e di salvarlo
     #creazione dei vettori
+    deb=open("debug.txt", "a")
     at=punti[:,0]
     bt=grafico[:,0]
-    if len(file)>=15:
+    if len(file)>=17:
+        deb.write(file+" : "+'posizione\n')
         av=punti[:,1]
         bv=grafico[:,1]
     else:
+        deb.write(file+" : "+'velocità\n')
         av=punti[:,2]
         bv=grafico[:,2]
     #inizio grafica
@@ -23,10 +26,12 @@ def stampa(punti, grafico, file):
     plt.plot(bt,bv,'y', label='grafico dei dati')
     #setto il titolo degli assi
     plt.xlabel('tempo [t]')
-    if len(file)>=15=='H':
+    if len(file)>17:
         plt.ylabel('posizione [m]')
+        deb.write(file+' inserità label posizione\n')
     else:
         plt.ylabel('velocità [m/s]')
+        deb.write(file+' inserità label velocità\n')
     plt.title('estremi della funzione misurata')
     plt.legend()
     plt.show()
@@ -35,6 +40,7 @@ def stampa(punti, grafico, file):
         fig.savefig("outputGrafici\\"+file+".png")
     else:
         fig.savefig("outputGrafici/"+file+".png")
+    deb.close()
 
 def controlloCartelle():
 #controlla che esistano le cartelle di partenza e se non esistono le fa
@@ -71,12 +77,15 @@ def letturaDati(file):
 controlloCartelle()
 input("caricare i file nella cartella indicata, poi premere enter")
 elFile=os.listdir(path='caricaFile')
+deb=open("debug.txt",'w')
 for file in elFile:
-    if len(file)>=15:
+    if len(file)>17:
         err=os.system("./main.exe "+file[:-4]+' H')
+        deb.write("./main.exe "+file[:-4]+' H\n')
     else:
         err=os.system("./main.exe "+file[:-4]+' s')
-
+        deb.write("./main.exe "+file[:-4]+' s\n')
+deb.close()
 time.sleep(2)
 ##########parte di raccolta dati e stampa#############
 for file in elFile:
