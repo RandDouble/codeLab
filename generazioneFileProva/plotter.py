@@ -23,7 +23,7 @@ def stampa(punti, grafico, file):
     fig=plt.figure()
     plt.style.use('ggplot')
     plt.plot( at, av,'bo',label='punti stazionari')
-    plt.plot(bt,bv,'y', label='grafico dei dati')
+    plt.plot(bt,bv, label='grafico dei dati')
     #setto il titolo degli assi
     plt.xlabel('tempo [t]')
     if len(file)>17:
