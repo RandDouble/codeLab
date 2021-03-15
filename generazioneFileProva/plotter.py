@@ -22,8 +22,8 @@ def stampa(punti, grafico, file):
     #inizio grafica
     fig=plt.figure()
     plt.style.use('ggplot')
-    plt.plot( at, av,'bo',label='punti stazionari')
-    plt.plot(bt,bv, label='grafico dei dati')
+    plt.plot(bt,bv,'gray', label='grafico dei dati')
+    plt.plot( at, av,'co',label='punti stazionari')
     #setto il titolo degli assi
     plt.xlabel('tempo [t]')
     if len(file)>17:
@@ -34,7 +34,7 @@ def stampa(punti, grafico, file):
         deb.write(file+' inserità label velocità\n')
     plt.title('estremi della funzione misurata')
     plt.legend()
-    plt.show()
+    #plt.show()
     #salvataggio dei dati
     if os.name=='nt':
         fig.savefig("outputGrafici\\"+file+".png")

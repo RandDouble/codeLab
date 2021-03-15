@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt 
 import numpy as np
-import math as mt
+#import math as mt
 
 a=np.linspace(0.0,3.0,150)
 omegaNat=1.53*2*np.pi
